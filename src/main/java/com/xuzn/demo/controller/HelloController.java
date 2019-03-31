@@ -7,14 +7,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HelloController {
 
-    @RequestMapping(value = "/hello",method = RequestMethod.GET)
+    @RequestMapping(value = "/helloView",method = RequestMethod.GET)
     public String hello(){
+        //System.out.println("hello");
         return "hello";
     }
 
 
-    @RequestMapping(value = "/home",method = RequestMethod.GET)
+    @RequestMapping(value = "/homeView",method = RequestMethod.GET)
     public String home(){
+        //System.out.println("home");
         return "home";
     }
 }

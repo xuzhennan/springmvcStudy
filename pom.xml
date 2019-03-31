@@ -15,9 +15,17 @@
         <junit.version>4.12</junit.version>
         <servlet.version>3.1.0</servlet.version>
         <mockito.version>1.10.19</mockito.version>
+        <mockmvc.version>2.0.3.RELEASE</mockmvc.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
@@ -41,12 +49,14 @@
             <scope>provided</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
-        <dependency>
+       <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
             <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
 
     <build>
