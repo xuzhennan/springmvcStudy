@@ -1,0 +1,2 @@
+# springmvcStudy
+本工程基于java实现springmvc,使用maven打war包到tomcat中运行即可。
